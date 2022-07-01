@@ -3,7 +3,9 @@
 - Account Auto Update
 - Config Gamemax Tsel Only
 # Tutorial
-- open Clash add profile
-- Import Url 
+- Buka App Clash add profile
+- pilih Import Url
+- Nama profile bebas
+- Kolom URL di isi dengan link di bawah
 - https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/Configuration.yaml
-- done
+- save
