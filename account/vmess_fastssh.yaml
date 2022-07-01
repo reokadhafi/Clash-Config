@@ -1,0 +1,49 @@
+proxies:
+  - name: SG-OVH
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: b9296a34-8c1d-4232-b7f7-456ac8117303
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg4.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/njkscnj/62bed7c763d29/
+      headers:
+        Host: sg4.v2-ray.com
+    udp: true
+  - name: SG-HE-1
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: 854fc069-23bc-4dd9-9c14-9f3bc50a3b76
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg1.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/njksbcv/62bed832ac87f/
+      headers:
+        Host: sg1.v2-ray.com
+    udp: true
+  - name: SG-UDPGW
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg3.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/jsbdcjhs/62bed8b8b256c/
+      headers:
+        Host: sg3.v2-ray.com
+    udp: true
