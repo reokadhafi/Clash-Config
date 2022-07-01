@@ -1,3 +1,4 @@
+proxies:
 proxy-providers:
   Trojan-SG:
     type: file
