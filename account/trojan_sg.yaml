@@ -1,0 +1,14 @@
+proxies:
+  - name: SG-HE MUX Trojan
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: e40b8ec0-f1dc-11ec-95f7-1239d0255272
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
