@@ -152,13 +152,23 @@ proxy-providers:
       interval: 86400
       lazy: true
       url: 'http://www.gstatic.com/generate_204'
-  
+  Vmsess-Fastssh:
+    type: file
+    url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/account/vmess_fastssh.yaml"
+    path: ./vmess_fastssh.yaml
+    health-check:
+      enable: true
+      interval: 86400
+      lazy: true
+      url: 'http://www.gstatic.com/generate_204'
+
 proxy-groups:
   - name: ✅Select
     type: select
     disable-udp: false
     proxies:
       - ♻️Trojan-SG
+      - 🔁Vmess-Fastssh
 
   - name: ♻️Trojan-SG
     type: load-balance
@@ -169,6 +179,16 @@ proxy-groups:
     disable-udp: false
     use:
       - Trojan-SG
+
+  - name: 🔁Vmess-Fastssh
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 300
+    strategy: consistent-hashing
+    disable-udp: false
+    use:
+      - Vmess-Fastssh
 
 rule-providers:
   GAME:
