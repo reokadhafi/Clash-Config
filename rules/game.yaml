@@ -1,0 +1,41 @@
+payload:
+#BlackDesertMobile
+  - DOMAIN-SUFFIX,saz-m-w01-gm001.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w01-gm002.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w01-gm003.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w01-gm004.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w01-gm005.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w02-gm001.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w02-gm002.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w02-gm003.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w02-gm004.pearl-bdm.com
+  - DOMAIN-SUFFIX,saz-m-w01-cht01.pearl-bdm.com
+
+#MobileLegends
+  - DOMAIN-SUFFIX,www.mobilelegends.com
+  - DOMAIN-SUFFIX,m.mobilelegends.com
+  - DOMAIN-SUFFIX,akmcdn.ml.youngjoygame.com
+  - DOMAIN-SUFFIX,akmstatic.ml.youngjoygame.com
+  - DOMAIN-SUFFIX,cdnconfig.aihelp.net
+  - DOMAIN-SUFFIX,akmpicture.youngjoygame.com
+  - DOMAIN-SUFFIX,ip.ml.youngjoygame.com
+  - DOMAIN-SUFFIX,gplog-sg.byteoversea.com
+  - DOMAIN-SUFFIX,xlog.byteoversea.com
+  - DOMAIN-SUFFIX,tnc16-alisg.isnssdk.com
+  - DOMAIN-SUFFIX,ml.aihelp.net
+  - DOMAIN-SUFFIX,newlogin.ml.youngjoygame.com
+  - DOMAIN-SUFFIX,cdn-sdk.aihelp.net
+  - DOMAIN-SUFFIX,ml-staticsrc.s3.amazonaws.com
+  - IP-CIDR,161.117.251.225/32
+  - IP-CIDR,161.52.91.0/24
+  - IP-CIDR,161.52.106.0/24
+  - IP-CIDR,164.52.90.0/23
+  - IP-CIDR,164.52.91.0/24
+  - IP-CIDR,164.52.73.0/24
+  - IP-CIDR,164.52.106.0/23
+  - IP-CIDR,164.52.2.0/24
+  - IP-CIDR,169.54.192.0/18
+  - IP-CIDR,169.55.192.0/18
+  - DST-PORT,10003
+  - DST-PORT,30190
+  - DST-PORT,30220
