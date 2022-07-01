@@ -2,7 +2,7 @@ proxy-providers:
   Trojan-SG:
     type: file
     url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/account/trojan_sg.yaml"
-    path: ./trojan_sg.yaml
+    path: ./confs/config/trojan_sg.yaml
     health-check:
       enable: true
       interval: 86400
@@ -11,7 +11,7 @@ proxy-providers:
   Vmsess-Fastssh:
     type: file
     url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/account/vmess_fastssh.yaml"
-    path: ./vmess_fastssh.yaml
+    path: ./confs/config/vmess_fastssh.yaml
     health-check:
       enable: true
       interval: 86400
@@ -51,7 +51,7 @@ rule-providers:
     type: file
     behavior: classical
     url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/rules/game.yaml"
-    path: ./game.yaml
+    path: ./confs/config/game.yaml
     
 rules:
   - RULE-SET,GAME,DIRECT 
