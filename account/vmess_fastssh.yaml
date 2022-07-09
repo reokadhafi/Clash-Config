@@ -11,7 +11,7 @@ proxies:
     servername: sg4.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/njkscnj/62bed7c763d29/
+      path: /fastssh/vjjvgkjv/62c9b8c97a049/
       headers:
         Host: sg4.v2-ray.com
     udp: true
@@ -27,7 +27,7 @@ proxies:
     servername: sg1.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/njksbcv/62bed832ac87f/
+      path: /fastssh/cucuc/62c9b84f2de9f/
       headers:
         Host: sg1.v2-ray.com
     udp: true
@@ -43,7 +43,7 @@ proxies:
     servername: sg3.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/jsbdcjhs/62bed8b8b256c/
+      path: /fastssh/gucuci/62c9b7b9ca4e0/
       headers:
         Host: sg3.v2-ray.com
     udp: true
