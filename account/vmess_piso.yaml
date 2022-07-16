@@ -1,0 +1,17 @@
+proxies:
+  - name: PISOVPNVMESSH4
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: d3426164-efc0-4ddb-81eb-60786adf7aca
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg4.freenet.buzz
+    network: ws
+    ws-opts:
+      path: /PisoVPN-VMESSNONTLS
+      headers:
+        Host: sg4.freenet.buzz
+    udp: true
