@@ -146,7 +146,7 @@ proxy-providers:
   Trojan-SG:
     type: file
     url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/account/trojan_sg_omady.yaml"
-    path: ./trojan_sg.yaml
+    path: ./trojan_sg_omady.yaml
     health-check:
       enable: true
       interval: 86400
@@ -155,7 +155,7 @@ proxy-providers:
   Vmess-Fastssh:
     type: file
     url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/account/vmess_fastssh_omady.yaml"
-    path: ./vmess_fastssh.yaml
+    path: ./vmess_fastssh_omady.yaml
     health-check:
       enable: true
       interval: 86400
