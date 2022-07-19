@@ -3,7 +3,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 80
     type: vmess
-    uuid: b80925d6-40fa-4161-9e32-3550965527fd
+    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
     alterId: 0
     cipher: auto
     tls: false
@@ -11,7 +11,7 @@ proxies:
     servername: sg4.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/vjjvgkjv/62c9b8c97a049/
+      path: /fastssh/hggy77/62d62a6b43f65/
       headers:
         Host: sg4.v2-ray.com
     udp: true
@@ -19,7 +19,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 80
     type: vmess
-    uuid: aa72613d-188c-4d7b-be46-6011d75a5f7a
+    uuid: 656793c4-32ee-4caf-a393-6a9cc29d0d85
     alterId: 0
     cipher: auto
     tls: false
@@ -27,7 +27,7 @@ proxies:
     servername: sg1.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/cucuc/62c9b84f2de9f/
+      path: /fastssh/acfv56/62d62abb2d666/
       headers:
         Host: sg1.v2-ray.com
     udp: true
@@ -43,7 +43,7 @@ proxies:
     servername: sg3.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/gucuci/62c9b7b9ca4e0/
+      path: /fastssh/asdcxr45/62d62b6225341/
       headers:
         Host: sg3.v2-ray.com
     udp: true
