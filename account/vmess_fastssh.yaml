@@ -1,49 +1,17 @@
 proxies:
-  - name: SG-OVH
+  - name: biznet vmess
     server: cf-vod.nimo.tv
     port: 80
     type: vmess
-    uuid: 16ceca7e-d27b-4b0d-acd7-a1d70e278be8
+    uuid: 4b4404c9-ffd8-41b2-a2c2-b1cf61d0c85c
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: sg4.v2-ray.com
+    servername: id3.v2-ray.com
     network: ws
-    ws-opts:
-      path: /fastssh/hggy77/62d62a6b43f65/
-      headers:
-        Host: sg4.v2-ray.com
-    udp: true
-  - name: SG-HE-1
-    server: cf-vod.nimo.tv
-    port: 80
-    type: vmess
-    uuid: 656793c4-32ee-4caf-a393-6a9cc29d0d85
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg1.v2-ray.com
-    network: ws
-    ws-opts:
-      path: /fastssh/acfv56/62d62abb2d666/
-      headers:
-        Host: sg1.v2-ray.com
-    udp: true
-  - name: SG-UDPGW
-    server: cf-vod.nimo.tv
-    port: 80
-    type: vmess
-    uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg3.v2-ray.com
-    network: ws
-    ws-opts:
-      path: /fastssh/asdcxr45/62d62b6225341/
-      headers:
-        Host: sg3.v2-ray.com
+    ws-opts: 
+      path: /fastssh/vychhc/62ef92ec251a7/
+      headers: 
+        Host: id3.v2-ray.com
     udp: true
