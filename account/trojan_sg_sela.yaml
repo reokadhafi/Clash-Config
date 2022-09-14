@@ -1,0 +1,53 @@
+proxies:
+  - name: SG-HE-1-T
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: aca65010-3418-11ed-9ee9-1239d0255272
+    skip-cert-verify: true
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
+  - name: SG-HE-MUX-T
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: b8f96dd0-3418-11ed-ac48-1239d0255272
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
+  - name: SG-UDPGW-T
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: c628c390-3418-11ed-9bdf-1239d0255272
+    skip-cert-verify: true
+    sni: sg8-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg8-trojan.bonds.id
+    udp: true
+  - name: SG-OVH-T
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: d45fb520-3418-11ed-ab80-1239d0255272
+    skip-cert-verify: true
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sgovh-trojan.bonds.id
+    udp: true
