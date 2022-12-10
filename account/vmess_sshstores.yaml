@@ -1,0 +1,65 @@
+proxies:
+  - name: sg1-gm
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: f230214c-45eb-4b1f-8edd-623cd8879835
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.vmess1.xservs.xyz
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg.vmess1.xservs.xyz
+    udp: true
+  - name: sg2-gm
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: fc176c72-3137-4567-a9b4-2304accac012
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.vmess2.xservs.xyz
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg.vmess2.xservs.xyz
+    udp: true
+  - name: sg3-gm
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: 8ff0d5f1-0d47-4ed3-a976-6b55269a8c37
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.vmess3.xservs.xyz
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg.vmess3.xservs.xyz
+    udp: true
+  - name: sg4-gm
+    server: cf-vod.nimo.tv
+    port: 80
+    type: vmess
+    uuid: 68c1247e-3c20-4fdf-b1cd-e8d259c42262
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg.vmess4.xservs.xyz
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg.vmess4.xservs.xyz
+    udp: true
