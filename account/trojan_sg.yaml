@@ -1,53 +1,97 @@
 proxies:
-  - name: SG-HE 1 Trojan VPN
+  - name: sg2.v2-ray.com WSS
     server: cf-vod.nimo.tv
     port: 443
-    type: trojan
-    password: 01f69450-7855-11ed-8d81-1239d0255272
+    type: vmess
+    uuid: 02093ce0-78e9-11ed-b138-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
+    servername: cf-vod.nimo.tv
     network: ws
     ws-opts:
-      path: /howdy
+      path: GET-:wss://cf-vod.nimo.tv/fastssh/
       headers:
-        Host: sg1-trojan.bonds.id
+        Host: sg2.v2-ray.com
     udp: true
-  - name: SG-HE MUX Trojan
+  - name: sg-ovh1.v2-ray.com WSS
     server: cf-vod.nimo.tv
     port: 443
-    type: trojan
-    password: 25d01ba0-7855-11ed-ac00-1239d0255272
+    type: vmess
+    uuid: 2e6040c0-78e9-11ed-b336-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sg6-trojan.bonds.id
+    servername: cf-vod.nimo.tv
     network: ws
     ws-opts:
-      path: /howdy
+      path: GET-:wss://cf-vod.nimo.tv/fastssh/
       headers:
-        Host: sg6-trojan.bonds.id
+        Host: sg-ovh1.v2-ray.com
     udp: true
-  - name: SG UDPGW Trojan
+  - name: sg-atha.v2-ray.com WSS
     server: cf-vod.nimo.tv
     port: 443
-    type: trojan
-    password: 3e172ec0-7855-11ed-917b-1239d0255272
+    type: vmess
+    uuid: 4c9d1860-78e9-11ed-b431-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sg8-trojan.bonds.id
+    servername: cf-vod.nimo.tv
     network: ws
     ws-opts:
-      path: /howdy
+      path: GET-:wss://cf-vod.nimo.tv/fastssh/
       headers:
-        Host: sg8-trojan.bonds.id
+        Host: sg-atha.v2-ray.com
     udp: true
-  - name: SG Trojan OVH
+  - name: sg3.v2-ray.com WSS
     server: cf-vod.nimo.tv
     port: 443
-    type: trojan
-    password: 58c15330-7855-11ed-a5bb-1239d0255272
+    type: vmess
+    uuid: 69b74140-78e9-11ed-b737-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
     skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
+    servername: cf-vod.nimo.tv
     network: ws
     ws-opts:
-      path: /howdy
+      path: GET-:wss://cf-vod.nimo.tv/fastssh/
       headers:
-        Host: sgovh-trojan.bonds.id
+        Host: sg3.v2-ray.com
+    udp: true
+  - name: id-herza.v2-ray.com WSS
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: 7b18e530-78e9-11ed-b236-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: cf-vod.nimo.tv
+    network: ws
+    ws-opts:
+      path: GET-:wss://cf-vod.nimo.tv/fastssh/
+      headers:
+        Host: id-herza.v2-ray.com
+    udp: true
+  - name: id-ikd.v2-ray.com WSS
+    server: cf-vod.nimo.tv
+    port: 443
+    type: vmess
+    uuid: 9dcabaf0-78e9-11ed-b833-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: cf-vod.nimo.tv
+    network: ws
+    ws-opts:
+      path: GET-:wss://cf-vod.nimo.tv/fastssh/
+      headers:
+        Host: id-ikd.v2-ray.com
     udp: true
