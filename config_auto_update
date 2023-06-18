@@ -114,7 +114,8 @@ proxy-groups:
     proxies:
       - trojsg-hwdygrpc-gmx
       - trojnetflix-hwdygrpc-gmx
-
+      - SG-HE 1 Trojan-gm
+      - SG-HE 2 Trojan-gm
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
   - MATCH,♻️Trojan-SG
