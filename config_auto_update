@@ -51,49 +51,55 @@ dns:
     - 8.8.8.8
 
 proxies:
-
   - name: trojsg-hwdygrpc-gmx
-
     server: cf-vod.nimo.tv
-
     port: 443
-
     type: trojan
-
     password: 53b4ecd0-0d72-11ee-ab26-1239d0255272
-
     skip-cert-verify: true
-
     sni: sg3.socifiles.com
-
     network: grpc
-
     grpc-opts: 
-
       grpc-service-name: trgrpc
-
     udp: true
-
   - name: trojnetflix-hwdygrpc-gmx
-
     server: cf-vod.nimo.tv
-
     port: 443
-
     type: trojan
-
     password: b6b88220-0d72-11ee-95a4-1239d0255272
-
     skip-cert-verify: true
-
     sni: us5.socifiles.com
-
     network: grpc
-
     grpc-opts: 
-
       grpc-service-name: trgrpc
-
+    udp: true
+  - name: SG-HE 1 Trojan-gm
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: 42844320-0c58-11ee-8a54-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    sni: sg1-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg1-trojan.bonds.id
+    udp: true
+  - name: SG-HE 2 Trojan-gm
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: 4339d900-0b4c-11ee-847c-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    sni: sg2-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg2-trojan.bonds.id
     udp: true
 
 proxy-groups:
