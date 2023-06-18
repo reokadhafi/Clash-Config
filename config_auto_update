@@ -101,6 +101,34 @@ proxies:
       headers:
         Host: sg2-trojan.bonds.id
     udp: true
+  - name: SG-HE 3 Trojan-gm
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: 6e3b15d0-0b4c-11ee-a195-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    sni: sg3-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg3-trojan.bonds.id
+    udp: true
+  - name: SG-HE MUX Trojan-gm
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: 9601d560-0d78-11ee-9a8f-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    sni: sg6-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
 
 proxy-groups:
   - name: ♻️Trojan-SG
@@ -116,6 +144,8 @@ proxy-groups:
       - trojnetflix-hwdygrpc-gmx
       - SG-HE 1 Trojan-gm
       - SG-HE 2 Trojan-gm
+      - SG-HE 3 Trojan-gm
+      - SG-HE MUX Trojan-gm
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
   - MATCH,♻️Trojan-SG
