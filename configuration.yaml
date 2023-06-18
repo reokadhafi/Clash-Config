@@ -1,0 +1,78 @@
+ipv6: false
+mode: rule
+geodata-mode: true
+tcp-concurrent: true
+enable-process: true
+geodata-loader: memconservative
+inbound-tfo: false
+log-level: debug
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: false
+profile:
+  store-selected: true
+  store-fake-ip: false
+  
+tun:
+  enable: true
+  device: utun
+  stack: system
+  dns-hijack:
+    - 0.0.0.0:1053
+  auto-route: true
+  auto-detect-interface: true
+  mtu: 9000
+  strict-route: false
+  inet4-route-address:
+    - 0.0.0.0/1
+    - 128.0.0.0/1
+  inet6-route-address:
+    - '::/1'
+    - '8000::/1'
+  exclude-package:
+    - com.mobile.legends
+dns:
+  enable: true
+  ipv6: false
+  prefer-h3: false
+  listen: 0.0.0.0:1053
+  use-hosts: true
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.188.128/25
+  fake-ip-filter: ["*.local", "*.localhost"]
+  nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+  proxy-server-nameserver:
+    - 8.8.8.8
+  default-nameserver:
+    - 8.8.8.8
+
+proxy-providers:
+  Trojan-SG:
+    type: file
+    url: "https://raw.githubusercontent.com/reokadhafi/Clash-Config/main/account/trojan_sg.yaml"
+    path: ./trojan_sg.yaml
+    health-check:
+      enable: true
+      interval: 86400
+      url: 'http://www.gstatic.com/generate_204'
+
+proxy-groups:
+  - name: ♻️Trojan-SG
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 800
+    lazy: false
+    strategy: consistent-hashing
+    disable-udp: false
+    use:
+      - Trojan-SG
+
+rules:
+  - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
+  - MATCH,♻️Trojan-SG
+  
