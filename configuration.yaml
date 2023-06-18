@@ -8,7 +8,7 @@ inbound-tfo: false
 log-level: debug
 allow-lan: true
 external-controller: 0.0.0.0:9090
-secret: ""
+secret: "reoreo"
 bind-address: "*"
 unified-delay: false
 profile:
