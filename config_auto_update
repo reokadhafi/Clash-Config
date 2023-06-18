@@ -129,6 +129,34 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
+  - name: amp-news-gm
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: a2064d70-0b4c-11ee-b1ac-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    sni: sg-2.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-2.test3.net
+    udp: true
+  - name: t-melbi-gm
+    server: cf-vod.nimo.tv
+    port: 443
+    type: trojan
+    password: bb904590-0b4c-11ee-932b-1239d0255272
+    tls: true
+    skip-cert-verify: true
+    sni: sg-4.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-4.test3.net
+    udp: true
 
 proxy-groups:
   - name: ♻️Trojan-SG
@@ -146,6 +174,8 @@ proxy-groups:
       - SG-HE 2 Trojan-gm
       - SG-HE 3 Trojan-gm
       - SG-HE MUX Trojan-gm
+      - amp-news-gm
+      - t-melbi-gm
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
   - MATCH,♻️Trojan-SG
