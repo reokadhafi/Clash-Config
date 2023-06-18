@@ -1,97 +1,23 @@
 proxies:
-  - name: sg2.v2-ray.com WSS
+  - name: trojsg-hwdygrpc-gmx
     server: cf-vod.nimo.tv
     port: 443
-    type: vmess
-    uuid: 02093ce0-78e9-11ed-b138-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 53b4ecd0-0d72-11ee-ab26-1239d0255272
     skip-cert-verify: true
-    servername: cf-vod.nimo.tv
-    network: ws
-    ws-opts:
-      path: GET-:wss://cf-vod.nimo.tv/fastssh/
-      headers:
-        Host: sg2.v2-ray.com
+    sni: sg3.socifiles.com
+    network: grpc
+    grpc-opts: 
+      grpc-service-name: trgrpc
     udp: true
-  - name: sg-ovh1.v2-ray.com WSS
+  - name: trojnetflix-hwdygrpc-gmx
     server: cf-vod.nimo.tv
     port: 443
-    type: vmess
-    uuid: 2e6040c0-78e9-11ed-b336-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: b6b88220-0d72-11ee-95a4-1239d0255272
     skip-cert-verify: true
-    servername: cf-vod.nimo.tv
-    network: ws
-    ws-opts:
-      path: GET-:wss://cf-vod.nimo.tv/fastssh/
-      headers:
-        Host: sg-ovh1.v2-ray.com
-    udp: true
-  - name: sg-atha.v2-ray.com WSS
-    server: cf-vod.nimo.tv
-    port: 443
-    type: vmess
-    uuid: 4c9d1860-78e9-11ed-b431-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cf-vod.nimo.tv
-    network: ws
-    ws-opts:
-      path: GET-:wss://cf-vod.nimo.tv/fastssh/
-      headers:
-        Host: sg-atha.v2-ray.com
-    udp: true
-  - name: sg3.v2-ray.com WSS
-    server: cf-vod.nimo.tv
-    port: 443
-    type: vmess
-    uuid: 69b74140-78e9-11ed-b737-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cf-vod.nimo.tv
-    network: ws
-    ws-opts:
-      path: GET-:wss://cf-vod.nimo.tv/fastssh/
-      headers:
-        Host: sg3.v2-ray.com
-    udp: true
-  - name: id-herza.v2-ray.com WSS
-    server: cf-vod.nimo.tv
-    port: 443
-    type: vmess
-    uuid: 7b18e530-78e9-11ed-b236-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cf-vod.nimo.tv
-    network: ws
-    ws-opts:
-      path: GET-:wss://cf-vod.nimo.tv/fastssh/
-      headers:
-        Host: id-herza.v2-ray.com
-    udp: true
-  - name: id-ikd.v2-ray.com WSS
-    server: cf-vod.nimo.tv
-    port: 443
-    type: vmess
-    uuid: 9dcabaf0-78e9-11ed-b833-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cf-vod.nimo.tv
-    network: ws
-    ws-opts:
-      path: GET-:wss://cf-vod.nimo.tv/fastssh/
-      headers:
-        Host: id-ikd.v2-ray.com
+    sni: us5.socifiles.com
+    network: grpc
+    grpc-opts: 
+      grpc-service-name: trgrpc
     udp: true
