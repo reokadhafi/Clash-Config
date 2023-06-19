@@ -135,6 +135,22 @@ proxies:
       headers:
         Host: sg-4.test3.net
     udp: true
+  - name: weekly-vm2-gm
+    server: cf-vod.nimo.tv
+    port: 8080
+    type: vmess
+    uuid: b592ecda-f464-4e93-9a13-97ddb50fe08e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: v2ray2.udpgw.com
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: v2ray2.udpgw.com
+    udp: true
 
 proxy-groups:
   - name: ♻️Trojan-SG
@@ -152,6 +168,7 @@ proxy-groups:
       - SG-HE MUX Trojan-gm
       - amp-news-gm
       - t-melbi-gm
+      - weekly-vm2-gm
       
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
