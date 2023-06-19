@@ -51,28 +51,6 @@ dns:
     - 8.8.8.8
 
 proxies:
-  - name: trojsg-hwdygrpc-gmx
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 53b4ecd0-0d72-11ee-ab26-1239d0255272
-    skip-cert-verify: true
-    sni: sg3.socifiles.com
-    network: grpc
-    grpc-opts: 
-      grpc-service-name: trgrpc
-    udp: true
-  - name: trojnetflix-hwdygrpc-gmx
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: b6b88220-0d72-11ee-95a4-1239d0255272
-    skip-cert-verify: true
-    sni: us5.socifiles.com
-    network: grpc
-    grpc-opts: 
-      grpc-service-name: trgrpc
-    udp: true
   - name: SG-HE 1 Trojan-gm
     server: cf-vod.nimo.tv
     port: 443
@@ -157,22 +135,6 @@ proxies:
       headers:
         Host: sg-4.test3.net
     udp: true
-  - name: weekly-vm2-gm
-    server: cf-vod.nimo.tv
-    port: 8080
-    type: vmess
-    uuid: b592ecda-f464-4e93-9a13-97ddb50fe08e
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: v2ray2.udpgw.com
-    network: ws
-    ws-opts:
-      path: /worryfree
-      headers:
-        Host: v2ray2.udpgw.com
-    udp: true
 
 proxy-groups:
   - name: ♻️Trojan-SG
@@ -184,15 +146,12 @@ proxy-groups:
     strategy: consistent-hashing
     disable-udp: false
     proxies:
-      - trojsg-hwdygrpc-gmx
-      - trojnetflix-hwdygrpc-gmx
       - SG-HE 1 Trojan-gm
       - SG-HE 2 Trojan-gm
       - SG-HE 3 Trojan-gm
       - SG-HE MUX Trojan-gm
       - amp-news-gm
       - t-melbi-gm
-      - weekly-vm2-gm
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
   - MATCH,♻️Trojan-SG
