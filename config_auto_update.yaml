@@ -152,6 +152,7 @@ proxy-groups:
       - SG-HE MUX Trojan-gm
       - amp-news-gm
       - t-melbi-gm
+      
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
   - MATCH,♻️Trojan-SG
