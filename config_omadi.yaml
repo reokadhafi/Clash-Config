@@ -50,7 +50,7 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: team.tawk.to
     port: 443
     type: trojan
     password: 0b71b1f0-1435-11ee-b1e6-1239d0255272
@@ -64,7 +64,7 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
   - name: SG-HE 2 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: team.tawk.to
     port: 443
     type: trojan
     password: 38d008f0-1435-11ee-9cc0-1239d0255272
@@ -78,7 +78,7 @@ proxies:
         Host: sg2-trojan.bonds.id
     udp: true
   - name: SG-HE 3 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: team.tawk.to
     port: 443
     type: trojan
     password: 4e478bb0-1435-11ee-b57f-1239d0255272
@@ -92,7 +92,7 @@ proxies:
         Host: sg3-trojan.bonds.id
     udp: true
   - name: SG-HE MUX Trojan-gm
-    server: cf-vod.nimo.tv
+    server: team.tawk.to
     port: 443
     type: trojan
     password: 651ca120-1435-11ee-8ebd-1239d0255272
@@ -106,7 +106,7 @@ proxies:
         Host: sg6-trojan.bonds.id
     udp: true
   - name: amp-news-gm
-    server: cf-vod.nimo.tv
+    server: team.tawk.to
     port: 443
     type: trojan
     password: 78e1c320-1435-11ee-8a0a-1239d0255272
@@ -120,7 +120,7 @@ proxies:
         Host: sg-2.test3.net
     udp: true
   - name: t-melbi-gm
-    server: cf-vod.nimo.tv
+    server: team.tawk.to
     port: 443
     type: trojan
     password: 8d0eb790-1435-11ee-90d3-1239d0255272
