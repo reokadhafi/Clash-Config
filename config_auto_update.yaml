@@ -55,7 +55,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: f7eb44b0-0e96-11ee-9a41-1239d0255272
+    password: 874e9ae0-1e27-11ee-989d-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -69,7 +69,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 173cf960-0e97-11ee-afe4-1239d0255272
+    password: c6b39f60-1e2f-11ee-aa6b-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -83,7 +83,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 3398af00-0e97-11ee-a10e-1239d0255272
+    password: dc207e00-1e2f-11ee-b5f9-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
@@ -97,7 +97,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 569a7800-0e97-11ee-af08-1239d0255272
+    password: f77418b0-1e2f-11ee-a171-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg6-trojan.bonds.id
@@ -111,7 +111,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 70c36d80-0e97-11ee-8d35-1239d0255272
+    password: 0e72bb10-1e30-11ee-ae33-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-2.test3.net
@@ -125,7 +125,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 88f2dc00-0e97-11ee-bb84-1239d0255272
+    password: 2334d640-1e30-11ee-ab44-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-4.test3.net
@@ -135,21 +135,19 @@ proxies:
       headers:
         Host: sg-4.test3.net
     udp: true
-  - name: weekly-vm2-gm
+  - name: weekly-trojan-gm
+    type: trojan
     server: cf-vod.nimo.tv
-    port: 8080
-    type: vmess
-    uuid: b592ecda-f464-4e93-9a13-97ddb50fe08e
-    alterId: 0
-    cipher: auto
-    tls: false
+    port: 443
+    password: 6c653700-1acb-11ee-bdb6-1239d0255272
+    tls: true
     skip-cert-verify: true
-    servername: v2ray2.udpgw.com
+    sni: trojan1.udpgw.com
     network: ws
     ws-opts:
-      path: /worryfree
+      path: /howdy
       headers:
-        Host: v2ray2.udpgw.com
+        Host: trojan1.udpgw.com
     udp: true
 
 proxy-groups:
@@ -168,7 +166,7 @@ proxy-groups:
       - SG-HE MUX Trojan-gm
       - amp-news-gm
       - t-melbi-gm
-      - weekly-vm2-gm
+      - weekly-trojan-gm
       
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
