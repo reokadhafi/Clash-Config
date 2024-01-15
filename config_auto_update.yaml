@@ -135,20 +135,6 @@ proxies:
       headers:
         Host: sg-4.test3.net
     udp: true
-  - name: weekly-trojan-gm
-    type: trojan
-    server: cf-vod.nimo.tv
-    port: 443
-    password: 6c653700-1acb-11ee-bdb6-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: trojan1.udpgw.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: trojan1.udpgw.com
-    udp: true
 
 proxy-groups:
   - name: ♻️Trojan-SG
@@ -166,7 +152,6 @@ proxy-groups:
       - SG-HE MUX Trojan-gm
       - amp-news-gm
       - t-melbi-gm
-      - weekly-trojan-gm
       
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
