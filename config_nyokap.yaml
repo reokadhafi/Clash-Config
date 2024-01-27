@@ -44,9 +44,6 @@ dns:
   fake-ip-filter: ["*.local", "*.localhost"]
   nameserver:
     - 8.8.8.8
-#    - 8.8.4.4
-  proxy-server-nameserver:
-    - 8.8.8.8
   default-nameserver:
     - 8.8.8.8
 
@@ -55,7 +52,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 5d691060-b3c6-11ee-97a4-1239d0255272
+    password: 4c76a2e0-bcc4-11ee-86f7-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -69,7 +66,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 748ed150-b3c6-11ee-a097-1239d0255272
+    password: 61162b40-bcc4-11ee-8542-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -83,7 +80,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 901b7290-b3c6-11ee-9c4e-1239d0255272
+    password: 7e84bef0-bcc4-11ee-93bf-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
@@ -93,39 +90,11 @@ proxies:
       headers:
         Host: sg3-trojan.bonds.id
     udp: true
-  - name: SG-HE MUX Trojan-gm
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 34292c50-6e96-11ee-9aea-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: sg6-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg6-trojan.bonds.id
-    udp: true
-  - name: amp-news-gm
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 21a94a20-9d33-11ee-8051-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: sg-2.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-2.test3.net
-    udp: true
   - name: t-melbi-gm
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: ab360ce0-b3c6-11ee-9c62-1239d0255272
+    password: 998e47f0-bcc4-11ee-9460-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-4.test3.net
@@ -149,8 +118,6 @@ proxy-groups:
       - SG-HE 1 Trojan-gm
       - SG-HE 2 Trojan-gm
       - SG-HE 3 Trojan-gm
-      - SG-HE MUX Trojan-gm
-      - amp-news-gm
       - t-melbi-gm
       
 rules:
