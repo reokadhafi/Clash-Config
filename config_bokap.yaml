@@ -52,7 +52,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: cf5bda00-b3c6-11ee-a212-1239d0255272
+    password: 80a70620-bcc3-11ee-8f28-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -66,7 +66,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: e4f78fe0-b3c6-11ee-9630-1239d0255272
+    password: 97af6130-bcc3-11ee-8f6c-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -80,7 +80,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: f81d6160-b3c6-11ee-862b-1239d0255272
+    password: aa7ecf20-bcc3-11ee-a4d1-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
@@ -90,39 +90,11 @@ proxies:
       headers:
         Host: sg3-trojan.bonds.id
     udp: true
-  - name: SG-HE MUX Trojan-gm
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 76712120-7027-11ee-9c46-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: sg6-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg6-trojan.bonds.id
-    udp: true
-  - name: amp-news-gm
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: a9fbda40-9d33-11ee-ae3a-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: sg-2.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-2.test3.net
-    udp: true
   - name: t-melbi-gm
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 0d72f3d0-b3c7-11ee-b062-1239d0255272
+    password: c8137790-bcc3-11ee-8ece-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-4.test3.net
@@ -146,8 +118,6 @@ proxy-groups:
       - SG-HE 1 Trojan-gm
       - SG-HE 2 Trojan-gm
       - SG-HE 3 Trojan-gm
-      - SG-HE MUX Trojan-gm
-      - amp-news-gm
       - t-melbi-gm
       
 rules:
