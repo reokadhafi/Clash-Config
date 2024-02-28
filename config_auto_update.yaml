@@ -52,10 +52,10 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: 56d23cd0-b3c8-11ee-95e7-1239d0255272
+    password: 3500c1c0-d61c-11ee-a415-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -66,10 +66,10 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
   - name: SG-HE 2 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: 6cdd4420-b3c8-11ee-8e3b-1239d0255272
+    password: 4d858480-d61c-11ee-8979-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -80,10 +80,10 @@ proxies:
         Host: sg2-trojan.bonds.id
     udp: true
   - name: SG-HE 3 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: 7e447ad0-b3c8-11ee-9060-1239d0255272
+    password: 5ffa1500-d61c-11ee-827e-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
@@ -93,39 +93,11 @@ proxies:
       headers:
         Host: sg3-trojan.bonds.id
     udp: true
-  - name: SG-HE MUX Trojan-gm
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 571f88b0-6dc3-11ee-a7d8-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: sg6-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg6-trojan.bonds.id
-    udp: true
-  - name: amp-news-gm
-    server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 04938280-a5e9-11ee-bd44-1239d0255272
-    tls: true
-    skip-cert-verify: true
-    sni: sg-2.test3.net
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-2.test3.net
-    udp: true
   - name: t-melbi-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: 96893490-b3c8-11ee-8ab4-1239d0255272
+    password: 73ec78c0-d61c-11ee-aa18-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-4.test3.net
@@ -149,8 +121,6 @@ proxy-groups:
       - SG-HE 1 Trojan-gm
       - SG-HE 2 Trojan-gm
       - SG-HE 3 Trojan-gm
-      - SG-HE MUX Trojan-gm
-      - amp-news-gm
       - t-melbi-gm
       
 rules:
