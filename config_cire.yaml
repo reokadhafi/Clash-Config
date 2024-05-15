@@ -49,10 +49,10 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: 6f968020-0d1b-11ef-8d9b-1239d0255272
+    password: afd81660-1281-11ef-a6af-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -63,10 +63,10 @@ proxies:
         Host: sg1-trojan.bonds.id
     udp: true
   - name: SG-HE 2 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: 854946f0-0d1b-11ef-a765-1239d0255272
+    password: d220c9d0-1281-11ef-98b2-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -77,10 +77,10 @@ proxies:
         Host: sg2-trojan.bonds.id
     udp: true
   - name: SG-HE 3 Trojan-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: b03f8210-0d1b-11ef-bc9c-1239d0255272
+    password: ef9e0960-1281-11ef-9763-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
@@ -91,10 +91,10 @@ proxies:
         Host: sg3-trojan.bonds.id
     udp: true
   - name: t-melbi-gm
-    server: cf-vod.nimo.tv
+    server: 104.18.53.42
     port: 443
     type: trojan
-    password: fd5aa700-0d1b-11ef-bbea-1239d0255272
+    password: 0e9afbe0-1282-11ef-8d6d-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-4.test3.net
