@@ -52,7 +52,7 @@ proxies:
     server: 104.18.53.42
     port: 443
     type: trojan
-    password: afd81660-1281-11ef-a6af-1239d0255272
+    password: 7cbe06a0-1da4-11ef-bb42-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -66,7 +66,7 @@ proxies:
     server: 104.18.53.42
     port: 443
     type: trojan
-    password: d220c9d0-1281-11ef-98b2-1239d0255272
+    password: 933d4c40-1da4-11ef-b981-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -80,7 +80,7 @@ proxies:
     server: 104.18.53.42
     port: 443
     type: trojan
-    password: ef9e0960-1281-11ef-9763-1239d0255272
+    password: a0b90200-1da4-11ef-aaec-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
@@ -94,7 +94,7 @@ proxies:
     server: 104.18.53.42
     port: 443
     type: trojan
-    password: 0e9afbe0-1282-11ef-8d6d-1239d0255272
+    password: c322fd90-1da4-11ef-a2d6-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg-4.test3.net
