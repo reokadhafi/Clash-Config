@@ -108,7 +108,7 @@ proxies:
     type: vmess
     server: cf-vod.nimo.tv
     port: 443
-    uuid: 54d45c89-9fbf-4045-908e-891e5b9632a8
+    uuid: 0aa8a832-23e0-49eb-a423-f77788e5ea5a
     alterId: 0
     cipher: auto
     tls: true
