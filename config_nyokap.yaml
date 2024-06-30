@@ -121,7 +121,7 @@ proxies:
 
 proxy-groups:
   - name: ♻️Trojan-SG
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 800
