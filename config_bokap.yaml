@@ -104,6 +104,20 @@ proxies:
       headers:
         Host: sg-4.test3.net
     udp: true
+  - name: grpc-custom
+    type: vmess
+    server: cf-vod.nimo.tv
+    port: 443
+    uuid: 54d45c89-9fbf-4045-908e-891e5b9632a8
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1grpc.serverip.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+    udp: true
 
 proxy-groups:
   - name: ♻️Trojan-SG
@@ -119,6 +133,7 @@ proxy-groups:
       - SG-HE 2 Trojan-gm
       - SG-HE 3 Trojan-gm
       - t-melbi-gm
+      - grpc-custom
       
 rules:
   - AND, (PROCESS-NAME,com.mobile.legends),(NOT,((DST-PORT,30101/30021/30071/30104))),DIRECT
