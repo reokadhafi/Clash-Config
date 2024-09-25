@@ -52,7 +52,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 3e02a0e0-6b79-11ef-ad08-1239d0255272
+    password: 9c8db430-7b33-11ef-96fa-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg1-trojan.bonds.id
@@ -66,7 +66,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 83647c50-73f7-11ef-a859-1239d0255272
+    password: bccea2b0-7b33-11ef-bc9f-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg2-trojan.bonds.id
@@ -80,7 +80,7 @@ proxies:
     server: cf-vod.nimo.tv
     port: 443
     type: trojan
-    password: 97f777d0-73f7-11ef-a5fc-1239d0255272
+    password: dffd23b0-7b33-11ef-9731-1239d0255272
     tls: true
     skip-cert-verify: true
     sni: sg3-trojan.bonds.id
