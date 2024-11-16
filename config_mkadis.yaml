@@ -49,18 +49,16 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
+    type: trojan
     server: cf-vod.nimo.tv
     port: 443
-    type: trojan
-    password: e8aaef20-7b32-11ef-a912-1239d0255272
+    password: 49e09a20-a471-11ef-b339-205c6d5f5d78
     tls: true
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg1-trojan.bonds.id
+    sni: asia1.fufo.org
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trgrpc
     udp: true
   - name: SG-HE 2 Trojan-gm
     server: cf-vod.nimo.tv
