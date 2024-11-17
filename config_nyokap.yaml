@@ -52,17 +52,17 @@ proxies:
     type: vmess
     server: cf-vod.nimo.tv
     port: 80
-    uuid: 6de94fc5-e40a-525d-9a07-92283f80f3dc
+    uuid: 0b7be600-a478-11ef-b331-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: sg3.v2vmess.site
+    servername: asia1.fufo.org
     network: ws
     ws-opts:
-      path: /vmess
+      path: /vmws
       headers:
-        Host: sg3.v2vmess.site
+        Host: asia1.fufo.org
     udp: true
   - name: SG-HE 2 Trojan-gm
     server: cf-vod.nimo.tv
