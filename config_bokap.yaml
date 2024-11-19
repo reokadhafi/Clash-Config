@@ -77,18 +77,20 @@ proxies:
         Host: sg2-trojan.bonds.id
     udp: true
   - name: SG-HE 3 Trojan-gm
+    type: vmess
     server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 6fe184f0-9027-11ef-88e5-1239d0255272
-    tls: true
+    port: 80
+    uuid: 2658f665-3a99-5a00-bd3e-f77729397137
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
+    servername: id2.vmess.site
     network: ws
     ws-opts:
-      path: /howdy
+      path: /vmess
       headers:
-        Host: sg3-trojan.bonds.id
+        Host: id2.vmess.site
     udp: true
   - name: t-melbi-gm
     server: cf-vod.nimo.tv
