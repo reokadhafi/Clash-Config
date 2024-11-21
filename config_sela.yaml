@@ -93,18 +93,20 @@ proxies:
         Host: id2.vless.site
     udp: true
   - name: t-melbi-gm
+    type: vmess
     server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 9efa6390-5e10-11ef-ad64-1239d0255272
-    tls: true
+    port: 80
+    uuid: 67157596-4b16-5380-8061-7b65c60e1c70
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: sg-4.test3.net
+    servername: sg3.v2vmess.site
     network: ws
     ws-opts:
-      path: /howdy
+      path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
       headers:
-        Host: sg-4.test3.net
+        Host: sg3.v2vmess.site
     udp: true
 
 proxy-groups:
