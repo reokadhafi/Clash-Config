@@ -49,16 +49,18 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
+    type: vmess
     server: cf-vod.nimo.tv
-    port: 443
-    type: trojan
-    password: 4d984560-a404-11ef-b833-205c6d5f5d78
-    tls: true
+    port: 80
+    uuid: d7a792b0-a7a7-11ef-b833-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: asia1.fufo.org
+    servername: asia1.fufo.org
     network: ws
     ws-opts:
-      path: /trojanws
+      path: /vmws
       headers:
         Host: asia1.fufo.org
     udp: true
