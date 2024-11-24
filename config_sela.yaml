@@ -93,22 +93,20 @@ proxies:
         Host: sg3-trojan.bonds.id
     udp: true
   - name: t-melbi-gm
-    type: vmess
+    type: trojan
     server: cf-vod.nimo.tv
-    port: 80
-    uuid: 67157596-4b16-5380-8061-7b65c60e1c70
-    alterId: 0
-    cipher: auto
-    tls: false
+    port: 443
+    password: 1763a680-aa7b-11ef-8516-1239d0255272
+    tls: true
     skip-cert-verify: true
-    servername: sg3.v2vmess.site
+    sni: sg1-trojan.bonds.id
     network: ws
     ws-opts:
-      path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
+      path: /howdy
       headers:
-        Host: sg3.v2vmess.site
+        Host: sg1-trojan.bonds.id
     udp: true
-
+    
 proxy-groups:
   - name: ♻️Trojan-SG
     type: load-balance
