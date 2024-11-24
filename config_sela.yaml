@@ -52,7 +52,7 @@ proxies:
     type: vmess
     server: cf-vod.nimo.tv
     port: 80
-    uuid: d16226f0-a7a8-11ef-b335-205c6d5f5d78
+    uuid: 828757d0-aa79-11ef-b137-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
