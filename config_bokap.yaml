@@ -93,18 +93,18 @@ proxies:
         Host: sg3-trojan.bonds.id
     udp: true
   - name: t-melbi-gm
-    type: trojan
+    type: vmess
     server: cf-vod.nimo.tv
     port: 443
-    password: a0622e50-aa7a-11ef-8cba-1239d0255272
+    uuid: 7c87f21a-b4ea-4e87-89f7-45a82e7d9136
+    alterId: 0
+    cipher: auto
     tls: true
     skip-cert-verify: true
-    sni: sg1-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg1-trojan.bonds.id
+    servername: idgrpc.serverip.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
     udp: true
 
 proxy-groups:
