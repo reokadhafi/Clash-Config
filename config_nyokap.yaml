@@ -61,32 +61,32 @@ proxies:
       grpc-service-name: trojan-grpc
     udp: true
   - name: SG-HE 2 Trojan-gm
+    type: trojan
     server: cf-vod.nimo.tv
     port: 443
-    type: trojan
-    password: 14b55d40-a3dc-11ef-a116-1239d0255272
+    password: 02311f60-bdc0-11ef-ab14-1239d0255272
     tls: true
     skip-cert-verify: true
-    sni: sg2-trojan.bonds.idxx
+    sni: sg2-trojan.bonds.id
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sg2-trojan.bonds.idxx
+        Host: sg2-trojan.bonds.id
     udp: true
   - name: SG-HE 3 Trojan-gm
     type: trojan
     server: cf-vod.nimo.tv
     port: 443
-    password: 03902e60-aa7a-11ef-a22d-1239d0255272
+    password: 37084fd0-bdc0-11ef-a60a-1239d0255272
     tls: true
     skip-cert-verify: true
-    sni: sg3-trojan.bonds.idxx
+    sni: sg3-trojan.bonds.id
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sg3-trojan.bonds.idxx
+        Host: sg3-trojan.bonds.id
     udp: true
   - name: t-melbi-gm
     type: vmess
