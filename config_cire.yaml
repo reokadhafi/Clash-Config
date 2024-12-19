@@ -67,12 +67,12 @@ proxies:
     password: bc5427c0-a3dc-11ef-b2c4-1239d0255272
     tls: true
     skip-cert-verify: true
-    sni: sg2-trojan.bonds.id
+    sni: sg2-trojan.bonds.idxx
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sg2-trojan.bonds.id
+        Host: sg2-trojan.bonds.idxx
     udp: true
   - name: SG-HE 3 Trojan-gm
     type: trojan
@@ -81,12 +81,12 @@ proxies:
     password: bf6a48c0-aa79-11ef-b86a-1239d0255272
     tls: true
     skip-cert-verify: true
-    sni: sg3-trojan.bonds.id
+    sni: sg3-trojan.bonds.idxx
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sg3-trojan.bonds.id
+        Host: sg3-trojan.bonds.idxx
     udp: true
   - name: t-melbi-gm
     type: vmess
@@ -97,7 +97,7 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: idgrpc.serverip.my.id
+    servername: idgrpc.serverip.my.idxx
     network: grpc
     grpc-opts:
       grpc-service-name: grpc
