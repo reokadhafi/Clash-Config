@@ -91,18 +91,20 @@ proxies:
   - name: t-melbi-gm
     type: vmess
     server: cf-vod.nimo.tv
-    port: 443
-    uuid: 7c87f21a-b4ea-4e87-89f7-45a82e7d9136
+    port: 80
+    uuid: 480ae10c-001c-4fb4-a2b3-2a4171f15a68
     alterId: 0
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: idgrpc.serverip.my.idxx
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc
+    servername: ovh.reonolimits.my.id
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ovh.reonolimits.my.id
     udp: true
-
+    
 proxy-groups:
   - name: ♻️Trojan-SG
     type: load-balance
