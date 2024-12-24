@@ -55,7 +55,7 @@ proxies:
     password: ea6764ce-f519-43c0-8f36-59969671dc5f
     tls: true
     skip-cert-verify: true
-    sni: biznet.reonolimits.my.id
+    sni: biznet.reonolimits.my.idddd
     network: grpc
     grpc-opts:
       grpc-service-name: trojan-grpc
