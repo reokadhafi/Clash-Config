@@ -49,16 +49,20 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
-    type: trojan
+    type: vmess
     server: cf-vod.nimo.tv
-    port: 443
-    password: 6be78bc1-e509-4af1-b91f-3ff33ebbfea0
-    tls: true
+    port: 80
+    uuid: 39a5f013-3ba4-4e96-aa9a-8316e14d1ebd
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: biznet.reonolimits.my.id
-    network: grpc
-    grpc-opts:
-      grpc-service-name: trojan-grpc
+    servername: ovh.reonolimits.my.id
+    network: ws
+    ws-opts:
+      path: /vmessws
+      headers:
+        Host: ovh.reonolimits.my.id
     udp: true
   - name: SG-HE 2 Trojan-gm
     type: trojan
@@ -89,20 +93,16 @@ proxies:
         Host: sg3-trojan.bonds.id
     udp: true
   - name: t-melbi-gm
-    type: vmess
+    type: trojan
     server: cf-vod.nimo.tv
-    port: 80
-    uuid: 39a5f013-3ba4-4e96-aa9a-8316e14d1ebd
-    alterId: 0
-    cipher: auto
-    tls: false
+    port: 443
+    password: 6be78bc1-e509-4af1-b91f-3ff33ebbfea0
+    tls: true
     skip-cert-verify: true
-    servername: ovh.reonolimits.my.id
-    network: ws
-    ws-opts:
-      path: /vmessws
-      headers:
-        Host: ovh.reonolimits.my.id
+    sni: biznet.reonolimits.my.id
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
     udp: true
 
 proxy-groups:
