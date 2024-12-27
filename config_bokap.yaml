@@ -49,6 +49,7 @@ dns:
 
 proxies:
   - name: SG-HE 1 Trojan-gm
+    type: vmess
     server: cf-vod.nimo.tv
     port: 80
     uuid: fe16db16-752c-4c39-8168-c1a4a111a674
